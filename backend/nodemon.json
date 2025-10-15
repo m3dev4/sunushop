@@ -1,0 +1,18 @@
+{
+  "watch": ["src"],
+  "ext": "ts,json",
+  "ignore": ["src/**/*.spec.ts", "src/**/*.test.ts", "node_modules"],
+  "exec": "ts-node --esm src/index.ts",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "delay": 1000,
+  "colours": true,
+  "legacyWatch": false,
+  "verbose": true,
+  "restartable": "rs",
+  "events": {
+    "restart": "echo '🔄 Server restarting...'",
+    "crash": "echo '💥 Server crashed - waiting for file changes before restart...'"
+  }
+}
